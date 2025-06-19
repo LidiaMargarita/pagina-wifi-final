@@ -1,0 +1,55 @@
+<!-- PÁGINA WEB DE WIFI ----  CEBALLOS VALENZUELA LIDIA MARGARITA Y BETANZOS VÁZQUEZ RICARDO -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro WiFi Gratis</title>
+  <link rel="stylesheet" href="diseño.css" />
+</head>
+<body>
+  <!-- DISEÑO DE LOGO Y PRIMERAS FRASES -->
+  <main class="form-wrapper">
+    <div class="form-card">
+
+      <!-- LOGO PERSONALIZADO EN LUGAR DE 📶 -->
+      <img src="img/logo-wifi.png" alt="Logo WiFi" class="wifi-logo" />
+
+      <h1>Regístrate al WiFi gratis</h1>
+      <p class="sub">Conéctate fácil y rápido</p>
+
+      <form>
+        <!-- FORMULARIO DE REGISTRO -->
+        <input
+          type="text" placeholder="Nombre completo" id="nombre" pattern="[A-Za-zÑñ\s]+" title="Solo letras, sin números" required />
+        <input type="date" placeholder="Fecha de nacimiento" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+
+        <label class="terms">
+          <input type="checkbox" required />
+          Acepto los términos y condiciones
+        </label>
+
+        <!-- BOTÓN DE CONTINUAR -->
+        <button type="submit" class="main-button">Continuar</button>
+
+        <!-- BOTONES DE REDES SOCIALES CON LOGO -->
+        <div class="social-buttons">
+          <button type="button" class="google" onclick="window.location.href='https://www.google.com'">
+            <img src="img/google-icon.png" alt="Google" class="icon" />
+            Continuar con Google
+          </button>
+
+          <button type="button" class="facebook" onclick="window.location.href='https://www.facebook.com'">
+            <img src="img/facebook-icon.png" alt="Facebook" class="icon" />
+            Continuar con Facebook
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
