@@ -71,9 +71,14 @@ form input::placeholder {
   color: #80868b;
 }
 
-.link {
+/* LINKS (para que no se vean morados si ya los visitaste) */
+a,
+a:visited {
   color: #1a73e8;
   text-decoration: none;
+}
+
+.link {
   font-size: 0.9rem;
   display: block;
   margin-bottom: 2rem;
@@ -98,11 +103,9 @@ form input::placeholder {
 }
 
 .actions button:hover {
-  background-color: #1967d2;
+  background-color: #1967d2;
 }
 
 .actions a.link {
-margin:0;
+  margin: 0;
 }
-
-
