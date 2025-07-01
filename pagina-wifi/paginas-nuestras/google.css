@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #202124;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  padding: 3rem 2.5rem 2.5rem;
+  box-shadow: 0 2px 10px rgba(32, 33, 36, 0.28);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.top-title {
+  font-size: 1rem;
+  color: #5f6368;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #5f6368;
+  margin-bottom: 2rem;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: #80868b;
+}
+
+.link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.65rem 1.8rem;
+  border: none;
+  border-radius: 24px; /* hace que el botón sea más redondo */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #1967d2;
+}
+
+.actions a.link {
+margin:0;
+}
+
+
