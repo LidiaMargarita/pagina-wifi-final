@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2.5rem; /* Subimos el contenido */
+  margin-top: 1.5rem; /* Subimos el contenido */
 }
 
 .language {
