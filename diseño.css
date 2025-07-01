@@ -5,28 +5,23 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f8ff;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 10px;
+  align-items: center;
   min-height: 100vh;
   margin: 0;
 }
 
 .form-wrapper {
   width: 100%;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
+  padding: 1rem;
 }
 
 .form-card {
-  width: 100%;
   max-width: 400px;
+  margin: -15px auto 0 auto; /* Esto lo sube hacia arriba */
   background: white;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -119,10 +114,10 @@ form input[type="date"] {
   height: 20px;
 }
 
-/* RESPONSIVE */
+/* Diseño responsivo */
 @media (max-width: 480px) {
   .form-card {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem;
   }
 
   h1 {
@@ -134,5 +129,5 @@ form input[type="date"] {
   .facebook {
     font-size: 0.9rem;
     padding: 0.65rem;
-}
+ }
 }
