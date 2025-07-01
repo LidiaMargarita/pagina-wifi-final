@@ -19,7 +19,7 @@ body {
 
 .form-card {
   max-width: 400px;
-  margin: -15px auto 0 auto; /* Esto lo sube hacia arriba */
+  margin: -60px auto 0 auto; /* 🔼 Esto sube todo el formulario */
   background: white;
   padding: 2.5rem 2rem 2rem 2rem;
   border-radius: 12px;
@@ -118,6 +118,7 @@ form input[type="date"] {
 @media (max-width: 480px) {
   .form-card {
     padding: 1.2rem;
+    margin-top: -60px; /* 🔼 también aplica para móviles */
   }
 
   h1 {
@@ -128,6 +129,6 @@ form input[type="date"] {
   .google,
   .facebook {
     font-size: 0.9rem;
-    padding: 0.65rem;
+    padding:0.65rem;
  }
 }
